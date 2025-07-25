@@ -1,10 +1,13 @@
-function logData(data: unknown) {
+function logData(data: any) {
   console.log("Data:", data);
 }
 
 logData({ key: "value" });
 
+let count = 0;
+count += 1;
 
+const unusedVarTS = "I am not used";
 
 async function fetchData(): Promise<string> {
   return Promise.resolve("Hello TypeScript");
@@ -12,6 +15,7 @@ async function fetchData(): Promise<string> {
 
 fetchData().then((message) => console.log(message));
 
+const greeting: string = "Hello, TypeScript Lint!";
 
 class Example {
   private name: string;
