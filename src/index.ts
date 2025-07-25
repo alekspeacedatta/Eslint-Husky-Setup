@@ -1,25 +1,23 @@
 function logData(data: unknown) {
-  console.log("Data:", data);
+  console.log('Data:', data);
 }
 
-logData({ key: "value" });
+logData({ key: 'value' });
 
 let count = 0;
 count += 1;
 console.log(count);
 
-
-const unusedVarTS = "I am not used";
+const unusedVarTS = 'I am not useddd for long brother';
 console.log(unusedVarTS);
 
-
 async function fetchData(): Promise<string> {
-  return Promise.resolve("Hello TypeScript");
+  return Promise.resolve('Hello TypeScript');
 }
 
 fetchData().then((message) => console.log(message));
 
-const greeting: string = "Hello, TypeScript Lint!";
+const greeting: string = 'Hello, TypeScript Lint!';
 console.log(greeting);
 
 class Example {
@@ -34,5 +32,5 @@ class Example {
   }
 }
 
-const example = new Example("Test");
+const example = new Example('Test');
 console.log(example.getName());
